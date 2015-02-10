@@ -9,6 +9,7 @@ module MindBody
       operation :get_packages
       operation :get_products
       operation :get_custom_payment_methods
+      operation :checkout_shopping_cart
     end
   end
 end
