@@ -10,6 +10,8 @@ module MindBody
         @globals.log_level(MindBody.configuration.log_level)
         locals = locals.has_key?(:message) ? locals[:message] : locals
         locals = fixup_locals(locals)
+        # set test post if so asked...
+        locals.merge!({"Test" => true}) if MindBody.configuration.bTest
         params = {:message => {'Request' => auth_params.merge(locals)}}
 
         # Run the request
