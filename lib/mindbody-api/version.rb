@@ -1,4 +1,4 @@
 module MindBody
-  VERSION = "1.0.4.alpha"
+  VERSION = "1.0.5.alpha"
   API_VERSION = "0.5.2.0"
 end
